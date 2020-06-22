@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Movement : MonoBehaviour
 {
-    private PlayerInputReader input;
+    private IInputSource input;
     private Rigidbody2D rb2d;
     private BoxCollider2D bodyCollider;
 
@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
-        input = GetComponent<PlayerInputReader>();
+        input = GetComponent<IInputSource>();
         rb2d = GetComponent<Rigidbody2D>();
         bodyCollider = GetComponent<BoxCollider2D>();
     }
@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
     
     void FixedUpdate()
     {
-        Vector2 desiredMovement = input.MoveDirection * speed * Time.fixedDeltaTime;
+        Vector2 desiredMovement = input.OnMove() * speed * Time.fixedDeltaTime;
         Vector2 direction = Vector2.right * desiredMovement.x;
         Move(direction);
         direction = Vector2.up * desiredMovement.y;
@@ -55,23 +55,5 @@ public class Movement : MonoBehaviour
         }
       
       rb2d.position = rb2d.position + direction * distance;
-
-        /*
-
-      Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, bodyCollider.size, 0);
-      foreach (Collider2D hit in hits)
-      {
-          if (hit == bodyCollider)
-              continue;
-
-          ColliderDistance2D colliderDistance = hit.Distance(bodyCollider);
-
-          if (colliderDistance.isOverlapped)
-          {
-            rb2d.MovePosition(rb2d.position + colliderDistance.pointA - colliderDistance.pointB);
-          }
-      }*/
-      //  RaycastHit2D[] collisions = new RaycastHit2D[16];
-      // = rb2d.Cast
     }
 }

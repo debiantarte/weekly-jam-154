@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInputReader : MonoBehaviour
+public class PlayerInputReader : MonoBehaviour, IInputSource
 {
     public Vector2 MoveDirection = Vector2.zero;
 
@@ -15,9 +15,15 @@ public class PlayerInputReader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public Vector2 OnMove()
+    {
         MoveDirection.x = Input.GetAxis("Horizontal");
         MoveDirection.y = Input.GetAxis("Vertical");
         MoveDirection.Normalize();
-    }
 
+        return MoveDirection;
+    }
 }
