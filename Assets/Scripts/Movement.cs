@@ -46,7 +46,6 @@ public class Movement : MonoBehaviour
         if (distance > minMoveDistance)
         {
             int count = rb2d.Cast(direction, contactFilter, hitArray, distance + skinWidth);
-            Debug.Log(count);
             for (int i = 0; i < count; i++)
             {
                 float realDistance = hitArray[i].distance - skinWidth;
