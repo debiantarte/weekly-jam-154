@@ -9,3 +9,5 @@ Gregoire Clermont
 Weak
 
 Debiantarte (github : https://github.com/debiantarte | itch.io : https://debiantarte.itch.io)
+
+Matthias (github : https://github.com/matthias4217)
