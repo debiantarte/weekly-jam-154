@@ -24,7 +24,7 @@ public class PlayerAvatar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerElement = Neutral;
+        playerElement = Rock;
         sprite = GetComponentInChildren<SpriteRenderer>();
         UpdateColor();
     }

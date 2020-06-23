@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     private ContactFilter2D contactFilter;
 
     [SerializeField] private float minMoveDistance = 0.001f;
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 10.0f;
     [SerializeField] private float skinWidth = 0.01f;
 
     private RaycastHit2D[] hitArray = new RaycastHit2D[16];
