@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: 27276e18b4975ae4c9b1cec56ab5fc7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4609543938413321648
+    second: "Sprite sheet h\xE9ro bleu_0"
+  - first:
+      213: -4189183279183893691
+    second: "Sprite sheet h\xE9ro bleu_1"
+  - first:
+      213: 8574739362172025153
+    second: "Sprite sheet h\xE9ro bleu_2"
+  - first:
+      213: 8318439033445845257
+    second: "Sprite sheet h\xE9ro bleu_3"
+  - first:
+      213: 2219142822510533362
+    second: "Sprite sheet h\xE9ro bleu_4"
+  - first:
+      213: -8900757855468624070
+    second: "Sprite sheet h\xE9ro bleu_5"
+  - first:
+      213: 9033217016350514757
+    second: "Sprite sheet h\xE9ro bleu_6"
+  - first:
+      213: 3811746711299064947
+    second: "Sprite sheet h\xE9ro bleu_7"
+  - first:
+      213: 4176788931302819371
+    second: "Sprite sheet h\xE9ro bleu_8"
+  - first:
+      213: 8604843481337811047
+    second: "Sprite sheet h\xE9ro bleu_9"
+  - first:
+      213: 2786804812909035439
+    second: "Sprite sheet h\xE9ro bleu_10"
+  - first:
+      213: -1572261357721473956
+    second: "Sprite sheet h\xE9ro bleu_11"
+  - first:
+      213: 5464702416056424306
+    second: "Sprite sheet h\xE9ro bleu_12"
+  - first:
+      213: -8366603319856010115
+    second: "Sprite sheet h\xE9ro bleu_13"
+  - first:
+      213: -7680771997951024079
+    second: "Sprite sheet h\xE9ro bleu_14"
+  - first:
+      213: -3607733781844708697
+    second: "Sprite sheet h\xE9ro bleu_15"
+  - first:
+      213: -8702024363883569978
+    second: "Sprite sheet h\xE9ro bleu_16"
+  - first:
+      213: -6362088608337464808
+    second: "Sprite sheet h\xE9ro bleu_17"
+  - first:
+      213: -7855657210487651821
+    second: "Sprite sheet h\xE9ro bleu_18"
+  - first:
+      213: -634541665204783458
+    second: "Sprite sheet h\xE9ro bleu_19"
+  - first:
+      213: 3004050579669697699
+    second: "Sprite sheet h\xE9ro bleu_20"
+  - first:
+      213: 1428212159532544153
+    second: "Sprite sheet h\xE9ro bleu_21"
+  - first:
+      213: 4505166150717468185
+    second: "Sprite sheet h\xE9ro bleu_22"
+  - first:
+      213: -4391148643885205999
+    second: "Sprite sheet h\xE9ro bleu_23"
+  - first:
+      213: -4993657819094027847
+    second: "Sprite sheet h\xE9ro bleu_24"
+  - first:
+      213: 4785125788452505997
+    second: "Sprite sheet h\xE9ro bleu_25"
+  - first:
+      213: 8992008897866287981
+    second: "Sprite sheet h\xE9ro bleu_26"
+  - first:
+      213: -2634979009748738504
+    second: "Sprite sheet h\xE9ro bleu_27"
+  - first:
+      213: -1264894110047845839
+    second: "Sprite sheet h\xE9ro bleu_28"
+  - first:
+      213: -8237097743627048166
+    second: "Sprite sheet h\xE9ro bleu_29"
+  - first:
+      213: 1304767758006939337
+    second: "Sprite sheet h\xE9ro bleu_30"
+  - first:
+      213: 5855198190054872794
+    second: "Sprite sheet h\xE9ro bleu_31"
+  - first:
+      213: -2366262347509217670
+    second: "Sprite sheet h\xE9ro bleu_32"
+  - first:
+      213: 1266120452927662451
+    second: "Sprite sheet h\xE9ro bleu_33"
+  - first:
+      213: -7432134774518694994
+    second: "Sprite sheet h\xE9ro bleu_34"
+  - first:
+      213: 5089826685038141936
+    second: "Sprite sheet h\xE9ro bleu_35"
+  - first:
+      213: -8519579408807691576
+    second: "Sprite sheet h\xE9ro bleu_36"
+  - first:
+      213: -7171609286763699928
+    second: "Sprite sheet h\xE9ro bleu_37"
+  - first:
+      213: -4123755123399810850
+    second: "Sprite sheet h\xE9ro bleu_38"
+  - first:
+      213: 5503515432895008770
+    second: "Sprite sheet h\xE9ro bleu_39"
+  - first:
+      213: 7858945876043731513
+    second: "Sprite sheet h\xE9ro bleu_40"
+  - first:
+      213: 4780671457809816487
+    second: "Sprite sheet h\xE9ro bleu_41"
+  - first:
+      213: 1588157045481893754
+    second: "Sprite sheet h\xE9ro bleu_42"
+  - first:
+      213: -4620247770264870765
+    second: "Sprite sheet h\xE9ro bleu_43"
+  - first:
+      213: -1027618503936898257
+    second: "Sprite sheet h\xE9ro bleu_44"
+  - first:
+      213: -345289239422657720
+    second: "Sprite sheet h\xE9ro bleu_45"
+  - first:
+      213: 7697207530828447584
+    second: "Sprite sheet h\xE9ro bleu_46"
+  - first:
+      213: 4557281122647454799
+    second: "Sprite sheet h\xE9ro bleu_47"
+  - first:
+      213: 9146016985593574821
+    second: "Sprite sheet h\xE9ro bleu_48"
+  - first:
+      213: -5980519128348075530
+    second: "Sprite sheet h\xE9ro bleu_49"
+  - first:
+      213: -4453616472761154087
+    second: "Sprite sheet h\xE9ro bleu_50"
+  - first:
+      213: 2320152605528039713
+    second: "Sprite sheet h\xE9ro bleu_51"
+  - first:
+      213: -5444062164839940089
+    second: "Sprite sheet h\xE9ro bleu_52"
+  - first:
+      213: 4411208907545752114
+    second: "Sprite sheet h\xE9ro bleu_53"
+  - first:
+      213: -3780974900952526810
+    second: "Sprite sheet h\xE9ro bleu_54"
+  - first:
+      213: 4035549806999086408
+    second: "Sprite sheet h\xE9ro bleu_55"
+  - first:
+      213: -43299088839957708
+    second: "Sprite sheet h\xE9ro bleu_56"
+  - first:
+      213: -3642008420781559612
+    second: "Sprite sheet h\xE9ro bleu_57"
+  - first:
+      213: 6552410022498828146
+    second: "Sprite sheet h\xE9ro bleu_58"
+  - first:
+      213: 2351665167660366005
+    second: "Sprite sheet h\xE9ro bleu_59"
+  - first:
+      213: 1939632824722663011
+    second: "Sprite sheet h\xE9ro bleu_60"
+  - first:
+      213: -1595099336673278852
+    second: "Sprite sheet h\xE9ro bleu_61"
+  - first:
+      213: 9032619297440569604
+    second: "Sprite sheet h\xE9ro bleu_62"
+  - first:
+      213: 1400109598807850470
+    second: "Sprite sheet h\xE9ro bleu_63"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 75
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_0"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd5ea12ac368ff30800000000000000
+      internalID: 4609543938413321648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_1"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bec39b0080dd5c0800000000000000
+      internalID: -4189183279183893691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_2"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149b2dbd4089ff670800000000000000
+      internalID: 8574739362172025153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_3"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909884a5a38017370800000000000000
+      internalID: 8318439033445845257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_4"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa1999b3aafbce10800000000000000
+      internalID: 2219142822510533362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_5"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37660183e72a7480800000000000000
+      internalID: -8900757855468624070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_6"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e169e240f6c5d70800000000000000
+      internalID: 9033217016350514757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_7"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3748ebc307b06e430800000000000000
+      internalID: 3811746711299064947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_8"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b268618476fe6f930800000000000000
+      internalID: 4176788931302819371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_9"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760d9fc4e8b8a6770800000000000000
+      internalID: 8604843481337811047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_10"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafbac35638bca620800000000000000
+      internalID: 2786804812909035439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_11"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c20f610a43e2ae0800000000000000
+      internalID: -1572261357721473956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite sheet h\xE9ro bleu_12"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2771348e4e586db40800000000000000
+      internalID: 5464702416056424306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

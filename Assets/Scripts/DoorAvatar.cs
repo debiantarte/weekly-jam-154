@@ -7,11 +7,13 @@ public class DoorAvatar : MonoBehaviour, IAvatar
     public Type ownType;
 
     [SerializeField] private Element ownElement;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         ownElement = new Element(ownType);
+        animator = GetComponent<Animator>();
     }
 
     public Element GetElement()
@@ -23,9 +25,11 @@ public class DoorAvatar : MonoBehaviour, IAvatar
     {
         if (killer.CompareTag("Player"))
         {
+            animator.SetTrigger("dead");
             PlayerAvatar player = killer.GetComponent<PlayerAvatar>();
             player.ChangeElement(ownElement);
-            Destroy(gameObject);
+            Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
+
         }
     }
 

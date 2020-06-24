@@ -15,8 +15,9 @@ public class EnemyAvatar : MonoBehaviour, IAvatar
 
     private void Start()
     {
+
         sprite = GetComponentInChildren<SpriteRenderer>();
-        UpdateColor();
+        //UpdateColor();
     }
 
     public void UpdateColor()

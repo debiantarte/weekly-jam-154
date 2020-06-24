@@ -14,7 +14,6 @@ public class WeaponController : MonoBehaviour
     private Vector3 south = new Vector3(0, 0, 180);
     private Vector3 west = new Vector3(0, 0, 90);
     private Vector3 east = new Vector3(0, 0, -90);
-    [SerializeField] private float orientationThreshold = 0.1f;
 
     [SerializeField] private float attackDuration = 0.2f;
     private float attackTimer;

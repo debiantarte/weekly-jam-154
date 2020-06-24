@@ -34,10 +34,7 @@ public class Movement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 desiredMovement = input.OnMove() * speed * Time.fixedDeltaTime;
-        /*Vector2 direction = Vector2.right * desiredMovement.x;
-        Move(direction);
-        direction = Vector2.up * desiredMovement.y;
-        Move(direction);*/
+        
         Move(desiredMovement);
     }
 

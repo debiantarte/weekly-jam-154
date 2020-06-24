@@ -7,24 +7,29 @@ using UnityEngine;
 public class PlayerAvatar : MonoBehaviour, IAvatar
 {
     // pregenerating elements, because we will change elements a lot
-    private readonly Element Rock = new Element(Type.Rock);
+   /* private readonly Element Rock = new Element(Type.Rock);
     private readonly Element Paper = new Element(Type.Paper);
     private readonly Element Scissor = new Element(Type.Scissor);
     private readonly Element Neutral = new Element(Type.Neutral);
-
-    public Element playerElement;
+    */
+    private Element playerElement;
 
     private SpriteRenderer sprite;
-    public Color neutralColor;
-    public Color rockColor;
-    public Color paperColor;
-    public Color scissorColor;
 
+    private Animator animator;
+
+    public Sprite RockWeapon;
+    public Sprite PaperWeapon;
+    public Sprite ScissorWeapon;
+
+    [SerializeField] private SpriteRenderer WeaponSprite;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerElement = Rock;
+
+        animator = GetComponentInChildren<Animator>();
+        playerElement = new Element(Type.Rock);
         sprite = GetComponentInChildren<SpriteRenderer>();
         UpdateColor();
     }
@@ -35,16 +40,19 @@ public class PlayerAvatar : MonoBehaviour, IAvatar
         switch (playerElement.type)
         {
             case Type.Rock:
-                sprite.color = rockColor;
+                animator.SetInteger("element", 1);
+                WeaponSprite.sprite = RockWeapon;
                 break;
             case Type.Paper:
-                sprite.color = paperColor;
+                animator.SetInteger("element", 2);
+                WeaponSprite.sprite = PaperWeapon;
                 break;
             case Type.Scissor:
-                sprite.color = scissorColor;
+                animator.SetInteger("element", 3);
+                WeaponSprite.sprite = ScissorWeapon;
                 break;
             default:
-                sprite.color = neutralColor;
+                Debug.LogError("Unrecognized element on player!");
                 break;
         }
             

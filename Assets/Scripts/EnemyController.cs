@@ -20,9 +20,14 @@ public class EnemyController : MonoBehaviour, IInputSource
     [SerializeField] private float attackInvterval = 2.0f;
     private float attackTimer = 0.0f;
 
+    private SpriteRenderer sprite;
+    private Animator animator;
+
     private void Start()
     {
         FindPlayer();
+        animator = GetComponentInChildren<Animator>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     public Vector2 OnMove()
@@ -32,18 +37,22 @@ public class EnemyController : MonoBehaviour, IInputSource
             float distance = Vector3.Distance(transform.position, player.position);
             if (distance <= triggerDistance)
             {
-                return (moveDirection = player.position - transform.position).normalized;
+                moveDirection = player.position - transform.position;
             }
             else
             {
-                return (moveDirection = RandomMove()).normalized;
+                moveDirection = RandomMove();
             }
         }
         else
         {
             FindPlayer();
-            return (moveDirection = RandomMove()).normalized;
+            moveDirection = RandomMove();
         }
+        animator.SetFloat("speed", moveDirection.normalized.magnitude);
+        sprite.flipX = (moveDirection.x > 0) ? false : true;
+
+        return moveDirection.normalized;
     }
 
     public Vector2? OnAttack()
@@ -51,6 +60,7 @@ public class EnemyController : MonoBehaviour, IInputSource
         if (attackTimer >= attackInvterval)
         {
             attackTimer = 0.0f;
+            animator.SetTrigger("attack");
             return moveDirection;
         }
         else
