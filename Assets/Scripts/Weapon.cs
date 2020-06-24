@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
         owner = GetComponentInParent<IAvatar>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
         IAvatar colAvatar = collision.gameObject.GetComponent<IAvatar>();
         if (colAvatar != null)

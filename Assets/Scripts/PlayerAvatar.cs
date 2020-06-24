@@ -6,12 +6,6 @@ using UnityEngine;
 
 public class PlayerAvatar : MonoBehaviour, IAvatar
 {
-    // pregenerating elements, because we will change elements a lot
-   /* private readonly Element Rock = new Element(Type.Rock);
-    private readonly Element Paper = new Element(Type.Paper);
-    private readonly Element Scissor = new Element(Type.Scissor);
-    private readonly Element Neutral = new Element(Type.Neutral);
-    */
     private Element playerElement;
 
     private SpriteRenderer sprite;
