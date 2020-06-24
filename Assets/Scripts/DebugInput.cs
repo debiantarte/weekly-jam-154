@@ -8,7 +8,7 @@ public class DebugInput : MonoBehaviour
 
     public bool OnDebugEnemySpawn()
     {
-        return Input.GetButtonDown("Fire1");
+        return Input.GetButtonDown("Fire3");
     }
 
     private void Update()
@@ -17,10 +17,15 @@ public class DebugInput : MonoBehaviour
         {
             OnDebugPlayerRespawn();
         }
+        else if (Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
     }
 
     public void OnDebugPlayerRespawn()
     {
-        Instantiate(playerPrefab);
+        if (!FindObjectOfType<PlayerAvatar>())
+            Instantiate(playerPrefab);
     }
 }

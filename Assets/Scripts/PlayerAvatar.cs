@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-public class PlayerAvatar : MonoBehaviour
+public class PlayerAvatar : MonoBehaviour, IAvatar
 {
     // pregenerating elements, because we will change elements a lot
     private readonly Element Rock = new Element(Type.Rock);
@@ -30,7 +30,7 @@ public class PlayerAvatar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void UpdateColor()
+    public void UpdateColor()
     {
         switch (playerElement.type)
         {
@@ -54,5 +54,20 @@ public class PlayerAvatar : MonoBehaviour
     {
         playerElement = newElement;
         UpdateColor();
+    }
+
+    public Element GetElement()
+    {
+        return playerElement;
+    }
+
+    public void Die(GameObject killer)
+    {
+        Destroy(gameObject);
+    }
+
+    public GameObject GetObject()
+    {
+        return gameObject;
     }
 }

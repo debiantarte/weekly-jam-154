@@ -10,41 +10,65 @@ public class EnemyController : MonoBehaviour, IInputSource
     private float changeDestinationTimer = 0.0f;
     [SerializeField] private float maxDeviation = 3.0f;
     [SerializeField] private float triggerDistance = 6.0f;
+    [SerializeField] private float attackDistance = 3.0f;
 
     private Vector3 randomDestination;
     [SerializeField] private float destinationReachedThreshold = 0.01f;
 
+    private Vector2 moveDirection = Vector2.zero;
+
+    [SerializeField] private float attackInvterval = 2.0f;
+    private float attackTimer = 0.0f;
+
     private void Start()
     {
-        player = FindObjectOfType<PlayerAvatar>().transform;
+        FindPlayer();
     }
 
     public Vector2 OnMove()
     {
-        if (player != null)
+        if (player)
         {
             float distance = Vector3.Distance(transform.position, player.position);
             if (distance <= triggerDistance)
             {
-                return (player.position - transform.position).normalized;
+                return (moveDirection = player.position - transform.position).normalized;
             }
             else
             {
-                return RandomMove();
+                return (moveDirection = RandomMove()).normalized;
             }
         }
         else
         {
-            PlayerAvatar newPlayer = FindObjectOfType<PlayerAvatar>();
-            player = (newPlayer) ? newPlayer.transform : null;
-            return RandomMove();
+            FindPlayer();
+            return (moveDirection = RandomMove()).normalized;
         }
+    }
+
+    public Vector2? OnAttack()
+    {
+        if (attackTimer >= attackInvterval)
+        {
+            attackTimer = 0.0f;
+            return moveDirection;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    private void FindPlayer()
+    {
+        PlayerAvatar newPlayer = FindObjectOfType<PlayerAvatar>();
+        player = (newPlayer) ? newPlayer.transform : null;
     }
 
     private Vector2 RandomMove()
     {
         float distance = Vector3.Distance(transform.position, randomDestination);
-        return (distance > destinationReachedThreshold) ? (randomDestination - transform.position).normalized : Vector3.zero;
+        return (distance > destinationReachedThreshold) ? (randomDestination - transform.position) : Vector3.zero;
     }
 
     private void Update()
@@ -58,6 +82,11 @@ public class EnemyController : MonoBehaviour, IInputSource
         {
             changeDestinationTimer += Time.deltaTime;
         }
+        if (player && Vector3.Distance(transform.position, player.position) <= attackDistance)
+        {
+            attackTimer += Time.deltaTime;
+        }
+
     }
 
     private void ChangeDestination()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorAvatar : MonoBehaviour
+public class DoorAvatar : MonoBehaviour, IAvatar
 {
     public Type ownType;
 
@@ -14,16 +14,24 @@ public class DoorAvatar : MonoBehaviour
         ownElement = new Element(ownType);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public Element GetElement()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        return ownElement;
+    }
+
+    public void Die(GameObject killer)
+    {
+        if (killer.CompareTag("Player"))
         {
-            PlayerAvatar player = collision.gameObject.GetComponent<PlayerAvatar>();
-            if (ownElement < player.playerElement)
-            {
-                player.ChangeElement(ownElement);
-                Destroy(gameObject);
-            }
+            PlayerAvatar player = killer.GetComponent<PlayerAvatar>();
+            player.ChangeElement(ownElement);
+            Destroy(gameObject);
         }
     }
+
+    public GameObject GetObject()
+    {
+        return gameObject;
+    }
+
 }

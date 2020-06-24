@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAvatar : MonoBehaviour
+public class EnemyAvatar : MonoBehaviour, IAvatar
 {
 
     public Element ownElement;
@@ -16,7 +16,11 @@ public class EnemyAvatar : MonoBehaviour
     private void Start()
     {
         sprite = GetComponentInChildren<SpriteRenderer>();
+        UpdateColor();
+    }
 
+    public void UpdateColor()
+    {
         switch (ownElement.type)
         {
             case Type.Rock:
@@ -34,20 +38,18 @@ public class EnemyAvatar : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public Element GetElement()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerAvatar player = collision.gameObject.GetComponent<PlayerAvatar>();
-            
-            if (ownElement < player.playerElement)
-            {
-                Destroy(gameObject);
-            }
-            else if (ownElement > player.playerElement)
-            {
-                Destroy(player.gameObject);
-            }
-        }
+        return ownElement;
+    }
+
+    public void Die(GameObject killer)
+    {
+        Destroy(gameObject);
+    }
+
+    public GameObject GetObject()
+    {
+        return gameObject;
     }
 }
