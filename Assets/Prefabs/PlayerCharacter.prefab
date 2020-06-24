@@ -278,6 +278,7 @@ MonoBehaviour:
   weaponOrbit: {fileID: 6410022312925849515}
   projectilePrefab: {fileID: 467733199226348235, guid: b5e9b9df854c7924d83aaa2cee406140,
     type: 3}
+  projectileSpeed: 10
   attackDuration: 0.2
 --- !u!1 &9118897463305325958
 GameObject:
@@ -291,7 +292,7 @@ GameObject:
   - component: {fileID: 17975977765001970}
   - component: {fileID: 5594615055731581113}
   - component: {fileID: 1407906548158154897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TestWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
