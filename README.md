@@ -4,7 +4,7 @@ The team :
 
 Malan'Tai (github : https://github.com/Malan-Tai | itch.io : https://malantai.itch.io)
 
-Gregoire Clermont
+Gregoire Clermont (itch.io : https://hikit.itch.io)
 
 Weak
 
