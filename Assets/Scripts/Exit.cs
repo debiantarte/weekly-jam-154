@@ -10,6 +10,15 @@ public class Exit : MonoBehaviour
     public Transform Destination;
     public GameObject[] ToDisable;
     public GameObject[] ToEnable;
+    public DebugInput input;
+
+    private void Start()
+    {
+        if (!input)
+        {
+            input = FindObjectOfType<DebugInput>();
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,6 +35,7 @@ public class Exit : MonoBehaviour
                     obj.SetActive(false);
                 }
                 collision.gameObject.transform.position = Destination.position;
+                input.lastPlayerSpawn = Destination;
                 foreach (GameObject obj in ToEnable)
                 {
                     obj.SetActive(true);

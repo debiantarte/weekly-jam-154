@@ -71,7 +71,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0316, y: -0.49430656}
+  m_Offset: {x: 0.06434341, y: -0.47247744}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -82,7 +82,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9368, y: 1.2917299}
+  m_Size: {x: 0.8713132, y: 1.0734396}
   m_EdgeRadius: 0
 --- !u!114 &694342147459282934
 MonoBehaviour:
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingType: 0
+  globalInput: {fileID: 0}
   RockWeapon: {fileID: 21300000, guid: 5124e4de7e16c3e43aeb4a64a52b15fb, type: 3}
   PaperWeapon: {fileID: 21300000, guid: 9188043a2b55acc40a74ae3764514c64, type: 3}
   ScissorWeapon: {fileID: 21300000, guid: f51ef251dd60a6b499756738bc5d6720, type: 3}
@@ -308,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9118897463305325958}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6410022312925849515}

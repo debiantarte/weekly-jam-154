@@ -8,7 +8,7 @@ public class PlayerAvatar : MonoBehaviour, IAvatar
 {
     public Type startingType;
     private Element playerElement;
-
+    public DebugInput globalInput;
     private SpriteRenderer sprite;
 
     private Animator animator;
@@ -22,7 +22,10 @@ public class PlayerAvatar : MonoBehaviour, IAvatar
     // Start is called before the first frame update
     void Start()
     {
-
+        if (!globalInput)
+        {
+            globalInput = FindObjectOfType<DebugInput>();
+        }
         animator = GetComponentInChildren<Animator>();
         playerElement = new Element(startingType);
         sprite = GetComponentInChildren<SpriteRenderer>();
@@ -66,6 +69,7 @@ public class PlayerAvatar : MonoBehaviour, IAvatar
 
     public void Die(GameObject killer)
     {
+        globalInput.lastPlayerType = playerElement.type;
         Destroy(gameObject);
     }
 
