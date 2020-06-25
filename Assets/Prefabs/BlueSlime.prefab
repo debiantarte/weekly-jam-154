@@ -129,10 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81bc278f30e33c46bfeb01e26d83b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neutralColor: {r: 1, g: 1, b: 1, a: 1}
-  rockColor: {r: 0, g: 0.11066723, b: 1, a: 1}
-  paperColor: {r: 0.004538993, g: 0.9622642, b: 0.090256035, a: 1}
-  scissorColor: {r: 1, g: 0.033018887, b: 0.033018887, a: 1}
+  ownType: 1
 --- !u!1 &3908079469783957640
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,4 +399,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWeapon: {fileID: 491917752183329651}
   weaponOrbit: {fileID: 4118565303759216265}
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 5
   attackDuration: 0.2

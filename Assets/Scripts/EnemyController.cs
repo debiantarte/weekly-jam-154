@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour, IInputSource
     private SpriteRenderer sprite;
     private Animator animator;
 
-    private void Start()
+    private void Awake()
     {
         FindPlayer();
         animator = GetComponentInChildren<Animator>();

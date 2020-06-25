@@ -6,22 +6,21 @@ public class EnemyAvatar : MonoBehaviour, IAvatar
 {
 
     public Element ownElement;
+    public Type ownType;
+    public EnemySpawner spawner;
 
     private SpriteRenderer sprite;
-    public Color neutralColor;
-    public Color rockColor;
-    public Color paperColor;
-    public Color scissorColor;
 
     private void Start()
     {
-
+        if (ownType > 0) ownElement = new Element(ownType);
         sprite = GetComponentInChildren<SpriteRenderer>();
-        //UpdateColor();
+        
     }
 
     public void UpdateColor()
     {
+        /* DEPRECATED
         switch (ownElement.type)
         {
             case Type.Rock:
@@ -37,6 +36,7 @@ public class EnemyAvatar : MonoBehaviour, IAvatar
                 sprite.color = neutralColor;
                 break;
         }
+        */
     }
 
     public Element GetElement()
@@ -46,6 +46,7 @@ public class EnemyAvatar : MonoBehaviour, IAvatar
 
     public void Die(GameObject killer)
     {
+        if (spawner != null) spawner.killCount++;
         Destroy(gameObject);
     }
 

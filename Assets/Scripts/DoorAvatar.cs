@@ -7,7 +7,7 @@ public class DoorAvatar : MonoBehaviour, IAvatar
     public Type ownType;
 
     [SerializeField] private Element ownElement;
-    private Animator animator;
+    protected Animator animator;
 
     // Start is called before the first frame update
     void Start()
