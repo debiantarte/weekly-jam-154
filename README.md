@@ -4,10 +4,12 @@ The team :
 
 Malan'Tai (github : https://github.com/Malan-Tai | itch.io : https://malantai.itch.io)
 
-Gregoire Clermont (itch.io : https://hikit.itch.io)
+Hikit (itch.io : https://hikit.itch.io)
 
-Weak
+Weak (itch.io : https://weakest-imp.itch.io/)
 
 Debiantarte (github : https://github.com/debiantarte | itch.io : https://debiantarte.itch.io)
 
 Matthias (github : https://github.com/matthias4217)
+
+Cyxo (newgrounds : https://cyxo.newgrounds.com)
