@@ -16,7 +16,7 @@ public class DebugInput : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && lastPlayerSpawn)
         {
             OnDebugPlayerRespawn();
         }
