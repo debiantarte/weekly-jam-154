@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DebugInput : MonoBehaviour
 {
@@ -28,11 +29,14 @@ public class DebugInput : MonoBehaviour
 
     public void OnDebugPlayerRespawn()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reset level completely
+        /*
         if (!FindObjectOfType<PlayerAvatar>())
         {
             GameObject player = Instantiate(playerPrefab, lastPlayerSpawn.position, Quaternion.identity);
             player.GetComponent<PlayerAvatar>().startingType = lastPlayerType;
             player.GetComponent<PlayerAvatar>().globalInput = this;
         }
+        */
     }
 }
