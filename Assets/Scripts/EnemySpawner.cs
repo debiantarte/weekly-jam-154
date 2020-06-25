@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (input.OnDebugEnemySpawn())
+        if (input && input.OnDebugEnemySpawn())
         {
             SpawnEnemy();
         }

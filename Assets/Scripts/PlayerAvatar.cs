@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerAvatar : MonoBehaviour, IAvatar
 {
+    public Type startingType;
     private Element playerElement;
 
     private SpriteRenderer sprite;
@@ -23,7 +24,7 @@ public class PlayerAvatar : MonoBehaviour, IAvatar
     {
 
         animator = GetComponentInChildren<Animator>();
-        playerElement = new Element(Type.Rock);
+        playerElement = new Element(startingType);
         sprite = GetComponentInChildren<SpriteRenderer>();
         UpdateColor();
     }

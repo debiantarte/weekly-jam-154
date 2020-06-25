@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724245946673925081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 0.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8694866294037754720}
@@ -146,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3535467134317189517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1468698794726558458}
@@ -241,7 +241,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011785686, y: -0.3064325}
+  m_Offset: {x: 0.011785656, y: -0.40942836}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -252,7 +252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8821415, y: 0.6699958}
+  m_Size: {x: 1.647254, y: 0.8759875}
   m_EdgeRadius: 0
 --- !u!114 &8628336216724149299
 MonoBehaviour:
@@ -283,7 +283,7 @@ MonoBehaviour:
   player: {fileID: 0}
   changeDestinationInterval: 4
   maxDeviation: 3
-  triggerDistance: 6
+  triggerDistance: 12
   attackDistance: 3
   destinationReachedThreshold: 0.01
   attackInvterval: 1
@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ownType: 2
+  spawner: {fileID: 0}
 --- !u!1 &8628336217874394465
 GameObject:
   m_ObjectHideFlags: 0
